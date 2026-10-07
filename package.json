@@ -1,0 +1,22 @@
+{
+  "name": "puppy-potty-schedule",
+  "version": "1.0.0",
+  "description": "Rule-of-thumb puppy potty intervals by age, a daily potty schedule builder, and a next-break helper. Zero dependencies.",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": { "types": "./src/index.d.ts", "default": "./src/index.js" },
+    "./rules.json": "./data/rules.json"
+  },
+  "files": ["src", "data"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test",
+    "example": "node examples/cli.js 10"
+  },
+  "keywords": ["puppy", "dog", "potty-training", "house-training", "schedule"],
+  "author": "Jack Ships",
+  "license": "MIT"
+}

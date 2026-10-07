@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "weeksPerMonth": 4.345,
+  "overnight": {
+    "description": "Longest stretch a sleeping puppy can usually hold it: about (age in months + 1) hours, capped.",
+    "hoursPerMonth": 1,
+    "plusHours": 1,
+    "capHours": 8
+  },
+  "awake": {
+    "description": "Interval between breaks while awake and active: about 30 minutes per month of age, clamped.",
+    "minutesPerMonth": 30,
+    "minMinutes": 45,
+    "maxMinutes": 180
+  },
+  "triggers": {
+    "wake": {
+      "minutes": 10,
+      "label": "after waking up"
+    },
+    "meal": {
+      "minutes": 25,
+      "label": "after eating"
+    },
+    "drink": {
+      "minutes": 20,
+      "label": "after a big drink"
+    },
+    "play": {
+      "minutes": 15,
+      "label": "after play"
+    },
+    "crate": {
+      "minutes": 0,
+      "label": "out of the crate"
+    }
+  },
+  "bedtime": {
+    "label": "last break before bed"
+  },
+  "mergeWithinMinutes": 20,
+  "supportedAgeWeeks": {
+    "min": 7,
+    "max": 104
+  }
+}
